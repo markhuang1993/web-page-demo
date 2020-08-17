@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="../style/reset.css" rel="stylesheet">
+    <style>
+        .container > .loading {
+            position: fixed;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+        }
+
+        .container > .loading-overlay {
+            position: absolute;
+            min-width: 100vw;
+            min-height: 100vh;
+            background-color: #fff;
+            opacity: 0.7;
+            z-index: 998;
+        }
+
+        .container > .loading .text {
+            margin-right: 1rem;
+            font-family: 'Oxgen', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: rgba(0, 43, 119, 0.78);
+            text-align: center;
+            transform-origin: 50% 50%;
+            -webkit-animation: vertical-movement 2.5s infinite ease-in-out;
+            -moz-animation: vertical-movement 2.5s infinite ease-in-out;
+            -ms-animation: vertical-movement 2.5s infinite ease-in-out;
+            -o-animation: vertical-movement 2.5s infinite ease-in-out;
+            animation: vertical-movement 2.5s infinite ease-in-out;
+        }
+
+        .container > .loading .text.text10 {
+            -webkit-animation-delay: -0.3s;
+            -moz-animation-delay: -0.3s;
+            -ms-animation-delay: -0.3s;
+            -o-animation-delay: -0.3s;
+            animation-delay: -0.3s;
+        }
+
+        .container > .loading .text.text9 {
+            -webkit-animation-delay: -0.6s;
+            -moz-animation-delay: -0.6s;
+            -ms-animation-delay: -0.6s;
+            -o-animation-delay: -0.6s;
+            animation-delay: -0.6s;
+        }
+
+        .container > .loading .text.text8 {
+            -webkit-animation-delay: -0.9s;
+            -moz-animation-delay: -0.9s;
+            -ms-animation-delay: -0.9s;
+            -o-animation-delay: -0.9s;
+            animation-delay: -0.9s;
+        }
+
+        .container > .loading .text.text7 {
+            -webkit-animation-delay: -1.2s;
+            -moz-animation-delay: -1.2s;
+            -ms-animation-delay: -1.2s;
+            -o-animation-delay: -1.2s;
+            animation-delay: -1.2s;
+        }
+
+        .container > .loading .text.text6 {
+            -webkit-animation-delay: -1.5s;
+            -moz-animation-delay: -1.5s;
+            -ms-animation-delay: -1.5s;
+            -o-animation-delay: -1.5s;
+            animation-delay: -1.5s;
+        }
+
+        .container > .loading .text.text5 {
+            -webkit-animation-delay: -1.8s;
+            -moz-animation-delay: -1.8s;
+            -ms-animation-delay: -1.8s;
+            -o-animation-delay: -1.8s;
+            animation-delay: -1.8s;
+        }
+
+        .container > .loading .text.text4 {
+            -webkit-animation-delay: -2.1s;
+            -moz-animation-delay: -2.1s;
+            -ms-animation-delay: -2.1s;
+            -o-animation-delay: -2.1s;
+            animation-delay: -2.1s;
+        }
+
+        .container > .loading .text.text3 {
+            -webkit-animation-delay: -2.4s;
+            -moz-animation-delay: -2.4s;
+            -ms-animation-delay: -2.4s;
+            -o-animation-delay: -2.4s;
+            animation-delay: -2.4s;
+        }
+
+        .container > .loading .text.text2 {
+            -webkit-animation-delay: -2.7s;
+            -moz-animation-delay: -2.7s;
+            -ms-animation-delay: -2.7s;
+            -o-animation-delay: -2.7s;
+            animation-delay: -2.7s;
+        }
+
+        .container > .loading .text.text1 {
+            -webkit-animation-delay: -3s;
+            -moz-animation-delay: -3s;
+            -ms-animation-delay: -3s;
+            -o-animation-delay: -3s;
+            animation-delay: -3s;
+        }
+
+        @-webkit-keyframes vertical-movement {
+            0%, 100% {
+                -webkit-transform: translateY(0%);
+            }
+            50% {
+                -webkit-transform: translateY(8px);
+            }
+        }
+
+        @keyframes vertical-movemen {
+            0%, 100% {
+                -webkit-transform: translateY(0%);
+                -moz-transform: translateY(0%);
+                -ms-transform: translateY(0%);
+                -o-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+            50% {
+                -webkit-transform: translateY(8px);
+                -moz-transform: translateY(8px);
+                -ms-transform: translateY(8px);
+                -o-transform: translateY(8px);
+                transform: translateY(8px);
+            }
+        }
+
+        .unselectable {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
+                                             supported by Chrome, Edge, Opera and Firefox */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container ">
+    <div class="loading-overlay"></div>
+    <div class="loading">
+        <div class="text text1 unselectable">l</div>
+        <div class="text text2 unselectable">o</div>
+        <div class="text text3 unselectable">a</div>
+        <div class="text text4 unselectable">d</div>
+        <div class="text text5 unselectable">i</div>
+        <div class="text text6 unselectable">n</div>
+        <div class="text text7 unselectable">g</div>
+        <div class="text text8 unselectable">.</div>
+        <div class="text text9 unselectable">.</div>
+        <div class="text text10 unselectable">.</div>
+    </div>
+</div>
+
+<div style="margin: auto; text-align: center;line-height: 2rem">
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+    <p>dummy text 123456789123123456789123123456789123</p>
+</div>
+
+<script>
+    window.addEventListener('resize', function () {
+        const bodyHeight = document.body.clientHeight;
+        const container = document.querySelector('.container > .loading-overlay');
+        container.style.height = bodyHeight + 'px';
+    });
+</script>
+</body>
+</html>
